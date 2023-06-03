@@ -1,0 +1,64 @@
+---
+title: Welcome
+layout: page.njk
+keyword: welcome
+permalink: "{{ title | slugify }}.html"
+eleventyNavigation:
+  key: "{{ title | slugify }}"
+  title: Home
+  order: 1
+---
+
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<style>
+
+
+body { font-family: sans-serif; }
+
+.gallery {
+  /* background: transparent; */
+  margin-bottom: 30px;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 400px;
+  margin-right: 10px;
+  background: #8C8;
+  overflow: hidden;
+}
+
+.gallery-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+
+</style>
+
+<!-- Flickity HTML init -->
+<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": true }'>
+  <div class="gallery-cell" >
+    <img class="gallery-img" src="/img/camp5.jpg"/>
+  </div>
+  <div class="gallery-cell" >
+    <img class="gallery-img" src="/img/camp2.jpg"/>
+  </div>
+  <div class="gallery-cell" >
+    <img class="gallery-img" src="/img/camp3.jpeg"/>
+  </div>
+  <div class="gallery-cell" >
+    <img class="gallery-img" src="/img/camp4.jpeg"/>
+  </div>
+</div>
+
+<div>
+
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit tempore dolorum, commodi officia corporis, maiores consequuntur eveniet repellendus eaque consequatur assumenda suscipit veniam eum in, architecto reiciendis iste! Ad ut, accusamus vel labore ratione blanditiis cum nobis natus rem consequuntur harum atque ipsa velit maiores id ipsam vitae nisi obcaecati! Illo sit quos earum enim iste porro repellendus perspiciatis. Optio fugit ullam facilis molestiae natus possimus illo mollitia quae, reiciendis earum quasi fuga molestias est. Corporis tempora voluptatum exercitationem nihil qui veritatis, inventore labore ea sint? Ducimus dicta earum quia accusantium porro beatae veniam fugiat similique ipsa? Illo architecto ex perspiciatis quam magni libero voluptate dignissimos asperiores tenetur deleniti ipsum non laboriosam, iste, sint molestias omnis quo suscipit et corporis rerum! Dolorem, dolor? Quod, rem porro! Eveniet eum veritatis iusto. Ipsa, non sapiente. Test
+
+</div>

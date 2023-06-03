@@ -1,8 +1,14 @@
+<link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
 <header>
     <!-- Title -->
     <hgroup>
-        <p class="title">{{meta.siteName}}</p>
-        <p class="motto">{{meta.motto}}<p>
+    <div class="flex flex-row items-center">
+        <img class="h-28" src="/img/logo-clear.png" />
+        <div class="flex flex-col">
+            <p class="title">{{meta.siteName}}</p>
+            <p class="motto">{{meta.motto}}<p>
+        </div>
+    </div>
     </hgroup>
     <!-- Navigation -->
     <nav>
